@@ -1,8 +1,8 @@
 (function($) {
     if (typeof window.GravForm === 'undefined') { return; }
 
-    var config = window.GravForm.config;
-    var body = $('body');
+    const config = window.GravForm.config;
+    const body = $('body');
 
     body.on('click', '[data-2fa-regenerate]', function(event) {
         event.preventDefault();
@@ -20,7 +20,7 @@
         });
     });
 
-    var toggleSecret = function() {
+    const toggleSecret = function() {
         const toggle = $('#toggle_twofa_enabled1');
         const secret = $('.twofa-secret');
 
